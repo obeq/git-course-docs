@@ -102,6 +102,14 @@ Note:
 git clone [repository-URL]
 ```
 
+-----
+
+# Övning 1
+
+1. Gör en intervju med en annan person i rummet.
+2. Skriv ner svaret på frågorna i ett dokument i Markdown-format
+3. Spara dokumentet under `interviews`
+
 ---
 ```sh
 # Clona repgit clone https://github.com/obeq/git-course-docs
@@ -118,17 +126,17 @@ touch [filnamn].txt
 # Öppna filen i en texteditor för att skriva in svaren
 nano [filnamn].txt
 
-# Lägga till filen i staging argit add [filnamn].txt
+# Lägga till filen i staging ar
+git add [filnamn].txt
 
-# Commita filen med ett meddelangit commit -m "Lägger till mina intervjusvar"
+# Commita filen med ett meddelan
+git commit -m "Lägger till mina intervjusvar"
 
-# Pusha branchen (och ändringarna) till remote repositorgit push --set-upstream origin [studentens-namn]
+# Pusha branchen (och ändringarna) till remote repositor
+git push --set-upstream origin [studentens-namn]
+
+# Om du får gnäll på att du behöver konfigurera namn och mailadress, följ bara instruktionerna!
 ```
 
------
-
-# Övning 1
-
-1. Gör en intervju med en annan person i rummet.
-2. Skriv ner svaret på frågorna i ett dokument i Markdown-format
-3. Spara dokumentet under `interviews`
+Note:
+Mer information om --set-upstream: https://stackoverflow.com/questions/37770467/why-do-i-have-to-git-push-set-upstream-origin-branch
