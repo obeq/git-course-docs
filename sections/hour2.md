@@ -190,6 +190,11 @@ Branches tillåter dig att utveckla funktioner, fixa buggar, eller experimentera
 
 -----
 
+# Om det blir fel
+
+
+-----
+
 # Sammanfattning
 
 - Nu har vi täckt grunderna i Git, inklusive konfiguration, skapa/clona repos, det grundläggande arbetsflödet, samt branching och merging.
