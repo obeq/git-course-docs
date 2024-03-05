@@ -2,9 +2,9 @@
 # Git och GitHub
 ### 11:00
 
-------
+-----
 
-# Välkommen till Git och GitHub
+# Välkommen till GitHub
 
 - Förstå GitHub's roll i versionshantering
 - Lär dig grunderna för att samarbeta på GitHub

@@ -10,8 +10,6 @@
 
 -----
 
-# Skapa och Clona Repositories
-
 ## Skapa ett nytt lokalt repository
 ```sh
 git init
@@ -21,8 +19,6 @@ git init
 ```sh
 git clone [repo-URL]
 ```
-- `git init` skapar ett nytt Git-repository lokalt
-- `git clone` kopierar ett befintligt repo till din lokala maskin
 
 Note:
 Skapa en ny mapp
@@ -43,7 +39,7 @@ Visa vad som finns i `.git`, särskilt objects och refs
    ```
 3. **Commita** för att spara dina ändringar i repots historik:
    ```sh
-   git commit -m "En beskrivande commit-meddelande"
+   git commit -m "Ett *beskrivande* commit-meddelande"
    ```
 4. **Pusha** ändringarna till remote repository:
    ```sh
@@ -51,6 +47,8 @@ Visa vad som finns i `.git`, särskilt objects och refs
    ```
 
 Note:
+Vad ska _inte_ finnas i ett commit-meddelande?
+
 Visa vad som händer i .git för varje steg!
 Add: checksum per file, save snapshot of file, updates index file with new checksum
 Commit: blob object in ./git/objects, .git/HEAD and .git/index updated, .git/logs/HEAD appended

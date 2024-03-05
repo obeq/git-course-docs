@@ -114,7 +114,7 @@ Note:
 
 https://github.com/obeq/git-course-docs
 
-```sh
+```bash
 git clone [repository-URL]
 ```
 
@@ -123,6 +123,7 @@ git clone [repository-URL]
 # Övning 1
 
 1. Gör en intervju med en annan person i rummet.
+  2. Om det plötsligt bröt ut en zombie-attack, vad skulle du göra då?
 2. Skriv ner svaret på frågorna i ett dokument i Markdown-format
 3. Spara dokumentet under `interviews`
 
