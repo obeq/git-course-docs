@@ -164,21 +164,46 @@ git push origin lokal-branch:remote-branch
 
 -----
 
-## Branching
-Skapa en ny branch:
+
+### Skapa en ny branch:
+
 ```sh
 git checkout -b [branch-namn]
 ```
 
-## Merging
-Sammanfoga en branch med master:
+### Sammanfoga en branch med master:
 ```sh
 git checkout master
 git merge [branch-namn]
 ```
 
-Note: 
-Branches tillåter dig att utveckla funktioner, fixa buggar, eller experimentera med ny kod säkert, separerat från huvud "master" branchen.
+---
+
+### Merge, rebase, fast-forward
+
+---
+
+![](images/git-master.png)
+
+---
+
+![](images/git-fastforward.png)
+
+---
+
+![](images/git-complex.png)
+
+---
+
+![](images/git-merge.png)
+
+---
+
+![](images/git-rebase.png)
+
+
+
+
 
 ----- 
 

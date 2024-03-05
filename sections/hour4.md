@@ -17,7 +17,9 @@
 
 -----
 
-# Feature Branch Workflow
+## Feature Branch Workflow
+
+![How branches are created and then merged](images/github-flow.png)
 
 - Skapa branches för nya funktioner
 - Isolera arbete och uppmuntra pull requests för kodgranskning

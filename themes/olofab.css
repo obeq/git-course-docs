@@ -1,0 +1,22 @@
+:root {
+  --r-background-color: #f7eec7ff; /* Lemon Chiffon: a light and soft background color */
+  /* --r-main-font: 'Arial', sans-serif; /* Keeping the font from the previous example */
+  /* --r-main-font-size: 16px; /* Default font size, adjust as needed */
+  --r-main-color: #130804ff; /* Licorice: primarily for text to ensure readability */
+  /* --r-block-margin: 20px; /* Example margin, adjust based on your layout */
+  /* --r-heading-margin: 10px 0; /* Adjusted heading margin for spacing */
+  /* --r-heading-font: 'Georgia', serif; A more distinguished font for headings */
+  --r-heading-color: #ad4e37ff; /* Chestnut: provides a warm tone for headings */
+  /* --r-heading-line-height: 1.5; /* Standard line-height for readability */
+  --r-heading-letter-spacing: normal; /* Adjust if you want to experiment with spacing */
+  --r-heading-text-transform: none; /* Keeping text transformations neutral */
+  --r-heading-text-shadow: none; /* Removing text shadow for clarity */
+  /* --r-heading-font-weight: bold; /* Emphasizing headings */
+  --r-link-color: #ba2310ff; /* Candy Apple Red: vibrant choice for links */
+  --r-link-color-dark: #ba2310ff; /* A darker shade of Candy Apple Red for contrast */
+  --r-link-color-hover: #ff5436ff; /* A lighter, more vibrant red on hover */
+  --r-selection-background-color: #ddd0adff; /* Dutch White: for selected text background */
+  --r-selection-color: #130804ff; /* Licorice: ensuring selected text is readable */
+  --r-overlay-element-bg-color: #ddd0adff; /* Dutch White: for overlay backgrounds */
+  --r-overlay-element-fg-color: #130804ff; /* Licorice: for text on overlays */
+}

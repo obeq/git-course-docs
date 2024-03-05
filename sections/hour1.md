@@ -110,7 +110,9 @@ Note:
 # Dags för er att börja jobba
 
 - Installera Git
-- Hämta kursrepo på https://github.com/obgit-course-docs
+- Hämta kursrepo på: 
+
+https://github.com/obeq/git-course-docs
 
 ```sh
 git clone [repository-URL]
