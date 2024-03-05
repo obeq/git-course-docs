@@ -2,14 +2,27 @@
 
 -----
 
+# Energinivå
+
+Nivå:
+Lugn - orolig
+Låg energi - Hög energi
+
+-----
+
 # Målet för dagen
-### Förbättra min presentation
-### Få med en perfekt lärobok i Git hem
+- Lura andra att förbättra min presentation
 
 -----
 
 # Dina mål
 - Förstå grunderna i versionshantering
+- Få med en perfekt lärobok i Git hem
+
+-----
+
+## Följ med eller titta hemma
+https://gitcourse.olofab.se
 
 -----
 
@@ -22,7 +35,6 @@
 - **13:00** - Software Development Cycles
 - **14:00** - Gemensamt projekt
 - **15:45** - Uppsamling och avslutning
-
 
 -----
 
@@ -41,6 +53,8 @@ Varför är det viktigt?
 # Introduktion till Git
 
 ## Git är...
+
+-----
 
 ## Några vanliga kommandon:
 

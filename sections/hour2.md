@@ -1,4 +1,5 @@
-# Timme 2: Grunder i Git
+# Grunder i Git
+### 10:00
 
 -----
 
@@ -190,8 +191,9 @@ Branches tillåter dig att utveckla funktioner, fixa buggar, eller experimentera
 
 -----
 
-# Om det blir fel
+### Om det blir fel
 
+![XKCD on git](../images/git-xkcd.png)
 
 -----
 
