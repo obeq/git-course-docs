@@ -212,6 +212,10 @@ git merge [branch-namn]
 3. Committa era förändringar
 4. Pusha
 
+---
+
+[Mer info om autentisering till github](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/about-authentication-to-github)
+
 -----
 
 ### Om det blir fel
