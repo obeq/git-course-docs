@@ -1,5 +1,5 @@
 # Grunder i Git
-### 10:00
+### 10:40
 
 -----
 
@@ -207,8 +207,8 @@ git merge [branch-namn]
 
 ### Övning - Branching och Merging
 
+1. Skapa en branch där ni rättar till dessa fel
 1. Se om ni kan hitta några smärre fel i `hour1.md`!
-2. Skapa en branch där ni rättar till dessa fel
 3. Committa era förändringar
 4. Pusha
 
