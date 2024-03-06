@@ -58,7 +58,7 @@ Varför är det viktigt?
 
 ## Några vanliga kommandon:
 
-```sh
+```
 git clone
 git add
 git commit
@@ -114,7 +114,7 @@ Note:
 
 https://github.com/obeq/git-course-docs
 
-```bash
+```
 git clone [repository-URL]
 ```
 
@@ -123,12 +123,12 @@ git clone [repository-URL]
 # Övning 1
 
 1. Gör en intervju med en annan person i rummet.
-  2. Om det plötsligt bröt ut en zombie-attack, vad skulle du göra då?
-2. Skriv ner svaret på frågorna i ett dokument i Markdown-format
-3. Spara dokumentet under `interviews`
+2. Om det plötsligt bröt ut en zombie-attack, vad skulle du göra då?
+3 Skriv ner svaret på frågorna i ett dokument i Markdown-format
+4 Spara dokumentet under `interviews`
 
 ---
-```sh
+```
 # Clona repgit clone https://github.com/obeq/git-course-docs
 
 # Navigera in i repomappen
