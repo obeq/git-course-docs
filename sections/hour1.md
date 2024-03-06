@@ -134,7 +134,8 @@ git clone [repository-URL]
 # Navigera in i repomappen
 git-course-docs
 
-# Skapa en ny branch med studentens nagit checkout -b [ditt-namn]
+# Skapa en ny branch med studentens namn
+git checkout -b [ditt-namn]
 
 # Skapa en fil med intervjusvar
 touch [filnamn].md
