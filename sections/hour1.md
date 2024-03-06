@@ -4,20 +4,21 @@
 
 # Energinivå
 
-Nivå:
+Nivå: Låg energi - Lugn
 Lugn - orolig
 Låg energi - Hög energi
 
 -----
 
 # Målet för dagen
-- Lura andra att förbättra min presentation
+- Att få ut något / lära mig av dagens lektion
 
 -----
 
 # Dina mål
 - Förstå grunderna i versionshantering
 - Få med en perfekt lärobok i Git hem
+- Göra bransch och koppla ihop det med master
 
 -----
 
