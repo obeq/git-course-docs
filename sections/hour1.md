@@ -107,7 +107,7 @@ Note:
 
 -----
 
-# Dags för er att börja jobba
+## Dags för er att börja jobba
 
 - Installera Git
 - Hämta kursrepo på: 
