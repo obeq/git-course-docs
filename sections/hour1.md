@@ -77,7 +77,6 @@ Note:
 
 # Historiska exempel
 
-- Styrdatorn till Apollo 11!!!
 - Linux Kernel
 - Flutter
 - freeCodeCamp
@@ -96,7 +95,6 @@ Note:
 - wtfjs
 - Chromebrew
 - The Coding Interview University
-- Shakespeare's samlade verk
 - System Design Primer
 
 Note:
@@ -123,9 +121,9 @@ git clone [repository-URL]
 # Övning 1
 
 1. Gör en intervju med en annan person i rummet.
-  2. Om det plötsligt bröt ut en zombie-attack, vad skulle du göra då?
-2. Skriv ner svaret på frågorna i ett dokument i Markdown-format
-3. Spara dokumentet under `interviews`
+2. Om det plötsligt bröt ut en zombie-attack, vad skulle du göra då?
+3. Skriv ner svaret på frågorna i ett dokument i Markdown-format
+4. Spara dokumentet under `interviews`
 
 ---
 ```sh
@@ -146,7 +144,7 @@ nano [filnamn].md
 # Eller
 notepad.exe [filnamn].md
 
-# Lägga till filen i staging ar
+# Lägga till filen i staging area
 git add [filnamn].md
 
 # Commita filen med ett meddelan
