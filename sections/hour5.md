@@ -23,3 +23,4 @@ Note:
 - Förklara Github actions på djupet
 - Förklara hooks
 - Utökade förklaringar per slide, bättre än mina anteckningar
+- Submodules
