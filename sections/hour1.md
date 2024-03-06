@@ -137,14 +137,16 @@ git-course-docs
 # Skapa en ny branch med studentens nagit checkout -b [ditt-namn]
 
 # Skapa en fil med intervjusvar
-touch [filnamn].txt
+touch [filnamn].md
 # Ersätt [filnamn] med ett lämpligt namn, exempelvis intervjusvar.txt
 
 # Öppna filen i en texteditor för att skriva in svaren
-nano [filnamn].txt
+nano [filnamn].md
+# Eller
+notepad.exe [filnamn].md
 
 # Lägga till filen i staging ar
-git add [filnamn].txt
+git add [filnamn].md
 
 # Commita filen med ett meddelan
 git commit -m "Lägger till mina intervjusvar"
