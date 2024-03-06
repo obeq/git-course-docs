@@ -77,11 +77,11 @@ Note:
 
 # Historiska exempel
 
+- Styrdatorn till Apollo 11!!!
 - Linux Kernel
 - Flutter
 - freeCodeCamp
 - VS Code
-- Styrdatorn till Apollo 11
 - oh-my-zsh
 
 Note:
@@ -96,7 +96,7 @@ Note:
 - wtfjs
 - Chromebrew
 - The Coding Interview University
-- Shakespear's samlade verk
+- Shakespeare's samlade verk
 - System Design Primer
 
 Note:
