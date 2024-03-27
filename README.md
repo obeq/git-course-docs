@@ -1,6 +1,4 @@
-# create-new-revealjs-template
-
-Create a new [Reveal.js](https://github.com/hakimel/reveal.js) presentation from this GitHub Template repository.
+# Git course slides repository
 
 * Includes Reveal.js as a **Git submodule** so that Reveal.js's Git commit history is not confused with the presentation's Git commit history.
 * Makes future updating of Reveal.js version very easy (see [Updating](#updating-revealjs) below).
