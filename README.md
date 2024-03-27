@@ -29,6 +29,7 @@
 
 ## Credits
 
+* Created using [This beautiful template](https://github.com/pacharanero/create-new-revealjs-template)
 * [Hakim El-Hattab](https://twitter.com/hakimel) for the simply awesome [Reveal.js](https://github.com/hakimel/reveal.js)
 * [Martino Mensio](https://twitter.com/MartinoMensio) for his guide on how to use Reveal.js as a Git submodule in [this](https://martinomensio.medium.com/how-to-host-reveal-js-slides-on-github-pages-and-have-a-tidy-repository-1a363944c38d) blog post (and in doing so I learned how to use and not fear the Submodule!)
 * [Excalidraw](https://excalidraw.com/) which is a separate project, mentioned in my presentation template, but I love it so much I wanted to plug it here too.
