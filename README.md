@@ -9,12 +9,6 @@ Create a new [Reveal.js](https://github.com/hakimel/reveal.js) presentation from
 
 ## Usage
 
-1. Click the 'Use This Template' button.
-
-1. Name your presentation repository and it will be created in your own GitHub account/org.
-
-1. Customise as necessary, by cloning locally (or even just using the Github editing UI). See the [Reveal.js documentation](https://revealjs.com/markup/) for information on how to get started with Reveal.js, how to add features, and customise your presentations as necessary.
-
 1. If you clone the repo locally you also need to get the submodule files with `git submodule update --init --recursive`
 
 1. You can use any local server to serve the files. One option is `live-server` (install it with `npm install -g live-server` then type `live-server` in the command line). Using a local server gives you additional features such as live-reload and some of the more advanced [Reveal.js](https://github.com/hakimel/reveal.js) features.
