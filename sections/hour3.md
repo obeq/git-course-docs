@@ -1,92 +1,79 @@
+# Hands-on: Utforska HTTP-requests
 
-# Git och GitHub
-### 12:45
-
------
-
-# Välkommen till GitHub
-
------
-
-# Vad är GitHub?
-
-Note: 
-- En webbaserad plattform för versionshantering och samarbete
-- Gör det enklare att hantera Git-repositories
-- Används för att spåra, dela och samarbeta på kodprojekt
-- Inte enda tjänsten för det här! Vet ni några alternativ??
-
------
-
-# Skapa ett GitHub-konto
-
-Note:
-- En snabb genomgång av hur man skapar och konfigurerar sitt GitHub-konto
-- Vikten av att välja rätt inställningar för din profil
-
------
-
-# Skapa och Klona Repositories
-
-Note:
-- Steg för att skapa ditt första GitHub-repository
-- Hur man klonar ett repo till din lokala enhet för att börja arbeta
-
------
-
-# Push och Pull
-
-````
-git push
-git pull
-```
+- Vi kommer nu att använda Postman/curl för att göra enkla HTTP-requests.
+- Fokus på att förstå de olika HTTP-metoderna genom praktisk tillämpning.
+- Analysera svar från API:et: titta på statuskoder, headers, och body.
 
 ---
 
-### Vad gör git pull egentligen??
+# Utforska GET Requests
 
-Note:
-- Grundläggande Git-kommandon: `git push` och `git pull`
-- Synkronisera ditt lokala arbete med ditt GitHub-repo
+- Använd Postman/curl för att göra en GET-request.
+- Observera hur data returneras i svaret.
+- Diskutera hur och varför vi använder GET.
 
------
+---
 
-# Samarbeta med Issues och Pull Requests
+# Utforska POST Requests
 
-Note:
-- Använda issues för att spåra arbete och feedback
-- Skapa och diskutera Pull Requests för kodändringar
+- Skapa och skicka en POST-request med Postman/curl.
+- Lägg märke till vad som händer på servern och vilket svar du får tillbaka.
+- Diskutera användningsområden för POST-requests.
 
------
+---
 
-# Branches och Forks
+# Lunchpaus
 
-Note:
-- Skillnaden mellan att arbeta i branches vs. forks
-- Hur och när man använder varje metod för samarbete
-- Protected branches
+- Ta en välförtjänt paus!
+- Vi återupptar med nya insikter kl 13:30.
 
------
+---
 
-# Avancerade GitHub-funktioner
+# Design och Dokumentation av API:er
 
-Note:
-- Introduktion till GitHub Actions för automatisering
-- Organisera arbete med GitHub Projects och Kanban-tavlor
+- Vikten av att skapa användarvänliga och väl dokumenterade API:er.
+- Översikt av dokumentationsverktyg som Swagger/OpenAPI.
+- Vi kommer att göra en kort övning i att dokumentera ett API.
 
------
+---
 
-# Bästa Praxis för GitHub
+# Praktisk Övning: Dokumentation
 
-Note:
-- Vikten av en välformulerad README
-- Välja rätt licens och använda .gitignore effektivt
+- Använd Swagger/OpenAPI för att skapa dokumentation för ett enkelt API.
+- Diskutera bästa praxis för API-dokumentation.
 
------
+---
 
-# Sammanfattning och Frågestund
+# Nätverksprotokoll Utöver HTTP/S
 
-- En återblick på det vi har lärt oss om Git och GitHub
-- Öppna upp för frågor och diskussioner
+- Utforska DNS och TCP/IP: Ryggraden i internetkommunikation.
+- Hur data paketeras och överförs över nätverk.
+- Grundläggande säkerhetsaspekter i nätverkskommunikation.
 
------
+---
+
+# Djupdykning i DNS
+
+- Hur fungerar Domain Name System (DNS)?
+- Rollen DNS spelar i att översätta domännamn till IP-adresser.
+
+---
+
+# Förståelse för TCP/IP
+
+- TCP/IP-modellen: Transport och Internet-lagren.
+- Hur data säkert och pålitligt överförs mellan enheter på internet.
+
+---
+
+# Säkerhet i Nätverkskommunikation
+
+- Översikt av kryptering, VPN, och andra säkerhetstekniker.
+- Diskutera vikten av säkerhet i design av nätverkskommunikation och API:er.
+
+---
+
+# Sammanfattning och Nästa Steg
+
+- Vi har praktiskt utforskat HTTP-requests, lärt oss om API-dokumentation, och dykt djupare i nätverksprotokoll.
+- Frågestund och reflektion över dagens lärande.
