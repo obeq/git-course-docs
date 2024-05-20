@@ -1,79 +1,170 @@
-# Hands-on: Utforska HTTP-requests
+### Lagring och analys av data
 
-- Vi kommer nu att använda Postman/curl för att göra enkla HTTP-requests.
-- Fokus på att förstå de olika HTTP-metoderna genom praktisk tillämpning.
-- Analysera svar från API:et: titta på statuskoder, headers, och body.
+- Förstå tekniker för att analysera stora datamängder
 
----
-
-# Utforska GET Requests
-
-- Använd Postman/curl för att göra en GET-request.
-- Observera hur data returneras i svaret.
-- Diskutera hur och varför vi använder GET.
+Note:  
+Introducera ämnet och förklara vikten av dataanalys i dagens datadrivna värld. Betona hur denna kunskap är kritisk för att effektivt hantera och utvinna värde från stora datamängder.
 
 ---
 
-# Utforska POST Requests
+### Utmaningar med stora datamängder
 
-- Skapa och skicka en POST-request med Postman/curl.
-- Lägg märke till vad som händer på servern och vilket svar du får tillbaka.
-- Diskutera användningsområden för POST-requests.
+- Hantering av volym
+- Hantering av varietet
+- Hantering av hastighet
 
----
-
-# Lunchpaus
-
-- Ta en välförtjänt paus!
-- Vi återupptar med nya insikter kl 13:30.
+Note:  
+Diskutera specifika utmaningar som kommer med varje "V" och hur dessa påverkar analysprocesserna.
 
 ---
 
-# Design och Dokumentation av API:er
-
-- Vikten av att skapa användarvänliga och väl dokumenterade API:er.
-- Översikt av dokumentationsverktyg som Swagger/OpenAPI.
-- Vi kommer att göra en kort övning i att dokumentera ett API.
+## Rast till 10:10
 
 ---
 
-# Praktisk Övning: Dokumentation
+### Översikt över databastekniker
 
-- Använd Swagger/OpenAPI för att skapa dokumentation för ett enkelt API.
-- Diskutera bästa praxis för API-dokumentation.
+- SQL och NoSQL
 
----
-
-# Nätverksprotokoll Utöver HTTP/S
-
-- Utforska DNS och TCP/IP: Ryggraden i internetkommunikation.
-- Hur data paketeras och överförs över nätverk.
-- Grundläggande säkerhetsaspekter i nätverkskommunikation.
+Note:  
+Ge en kort jämförelse mellan SQL och NoSQL-tekniker, och förklara hur de varierar i hantering av strukturerade och ostrukturerade data.
 
 ---
 
-# Djupdykning i DNS
+### Vad är SQL?
 
-- Hur fungerar Domain Name System (DNS)?
-- Rollen DNS spelar i att översätta domännamn till IP-adresser.
+- **Definition av SQL:** Structured Query Language
+- **Användningsområden:** Hantering av relationella databaser
 
----
-
-# Förståelse för TCP/IP
-
-- TCP/IP-modellen: Transport och Internet-lagren.
-- Hur data säkert och pålitligt överförs mellan enheter på internet.
+Note:
+Introducera SQL som det standardiserade programmeringsspråket för att hantera och manipulera relationella databaser. Förklara att SQL låter användare skapa, läsa, uppdatera och radera data genom väldefinierade kommandon.
 
 ---
 
-# Säkerhet i Nätverkskommunikation
+### Fördelar med SQL-databaser
 
-- Översikt av kryptering, VPN, och andra säkerhetstekniker.
-- Diskutera vikten av säkerhet i design av nätverkskommunikation och API:er.
+- **Pålitlig dataintegritet**
+- **Standardiserad språk**
+- **Komplexa frågor och transaktioner**
+- **Bra stöd**
+
+Note:
+Beskriv de viktigaste fördelarna med SQL-databaser, såsom deras förmåga att hantera komplexa frågor, stöd för samtidiga användare och transaktioner, samt hur de upprätthåller strikt dataintegritet och konsistens.
 
 ---
 
-# Sammanfattning och Nästa Steg
+### Exempel på SQL-databaser
 
-- Vi har praktiskt utforskat HTTP-requests, lärt oss om API-dokumentation, och dykt djupare i nätverksprotokoll.
-- Frågestund och reflektion över dagens lärande.
+- **Populära SQL-databassystem:**
+  - MySQL
+  - PostgreSQL
+  - Microsoft SQL Server
+  - Oracle Database
+
+Note:
+Lista några av de mest populära SQL-databassystemen och ge en kort beskrivning av varje, inklusive dess styrkor och vanliga användningsområden inom industrin.
+
+---
+
+### Grundläggande SQL-kommandon
+
+- **Skapa tabeller:** `CREATE TABLE`
+- **Infoga data:** `INSERT INTO`
+- **Uppdatera data:** `UPDATE`
+- **Ta bort data:** `DELETE`
+- **Fråga data:** `SELECT`
+
+Note:
+Förklara och visa exempel på grundläggande SQL-kommandon. Varje kommando kan demonstreras med en enkel SQL-fråga, exempelvis hur man skapar en tabell, hur man infogar data, och hur man hämtar data från en databas. Detta ger eleverna praktiska exempel på hur SQL används för att interagera med databaser.
+
+---
+
+# Rast till 11:05
+
+---
+
+### Vad är NoSQL?
+
+- **Definition av NoSQL:** Not Only SQL
+- **Syfte:** Hantera ostrukturerade och semistrukturerade data
+- **Egenskaper:** Skalbarhet, flexibilitet, enklare modellering
+
+Note:
+Introducera NoSQL som en kategori av databassystem designade för att hantera stora mängder data som ofta är ostrukturerade. Förklara att NoSQL är ett svar på de begränsningar och utmaningar som finns i traditionella relationella databaser, särskilt när det gäller skalbarhet och hantering av varierande datatyper.
+
+---
+
+### Typer av NoSQL-databaser
+
+- **Dokumentdatabaser:** MongoDB, CouchDB
+- **Nyckel-värde-databaser:** Redis, DynamoDB
+- **Kolumnfamiljedatabaser:** Cassandra, HBase
+- **Graf-databaser:** Neo4j, ArangoDB
+
+Note:
+Förklara de fyra huvudtyperna av NoSQL-databaser och ge exempel på varje. Beskriv hur varje typ lagrar data och de typiska användningsområdena, vilket hjälper eleverna att förstå när och varför en specifik NoSQL-databas kan vara det bästa valet.
+
+---
+
+### Fördelar med NoSQL i hantering av Big Data
+
+- **Flexibilitet:** Schema-lös design tillåter dynamiska data
+- **Skalbarhet:** Horisontell skalbarhet, idealisk för molnet
+- **Snabbhet:** Optimerad för snabba läsningar och skrivningar
+
+Note:
+Betonar fördelarna med NoSQL när det gäller att hantera Big Data. Diskutera specifikt hur dess flexibilitet i datamodellering och lagring gör det möjligt att enkelt och effektivt skala ut applikationer och hantera stora datamängder.
+
+---
+
+### Exempel på NoSQL-databaser
+
+- **MongoDB:** Dokumentorienterad databas
+- **Cassandra:** Kolumnfamiljeorienterad databas
+- **Neo4j:** Graf-databas
+
+Note:
+Ge en djupare titt på några specifika exempel på NoSQL-databaser. För varje exempel, beskriv hur de fungerar, typiska användningsfall och varför de skulle väljas över andra databastyper eller över varandra beroende på projektkrav.
+
+---
+
+## Rast till 15:02
+
+---
+
+### Slide 13-17: Tekniker för dataanalys
+
+- Slide 13: Data Mining
+- Slide 14: Maskininlärning
+- Slide 15: Textanalys
+- Slide 16: Datavisualisering
+- Slide 17: Realtidsanalys
+
+Note:  
+Varje slide fokuserar på en specifik teknik för dataanalys, dess verktyg, och hur de tillämpas på stora datamängder för att driva insikter.
+
+### Slide 18: Verktyg och plattformar för Big Data-analys
+
+- Hadoop
+- Spark
+- Flink
+
+Note:  
+Beskriv några av de mest använda verktygen och plattformarna som hanterar analys av stora datamängder, och förklara kort deras funktioner och fördelar.
+
+### Slide 19: Framtidstrender inom dataanalys
+
+- AI och automatisering
+- Förbättrad datavisualisering
+- Dataprivatighet och säkerhet
+
+Note:  
+Diskutera framtida trender och innovationer inom fältet som kan påverka hur vi hanterar och analyserar Big Data.
+
+### Slide 20: Sammanfattning och slutsatser
+
+- Viktigaste punkterna från presentationen
+- Uppmaning till vidare lärande och utforskning
+
+Note:  
+Summera de viktigaste lärdomarna från presentationen och uppmuntra åhörarna att fortsätta utforska och lära sig om Big Data-analys.

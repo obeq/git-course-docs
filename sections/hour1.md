@@ -1,63 +1,147 @@
-# Dag 1 - introduktion
+### Examination
 
-## Översikt
-
----
-
-- Kursens syfte är att den studerande ska ha god kännedom om systemintegration med särskilt fokus på det som är relevant inom IoT.
-- Kursens mål är att den studerande ska använda systemintegration för att skapa effektiva IoT-system som innehåller eller kommunicerar med APIer, tjänsteorienterande arkitekturer och/eller web services.
+- Presentation
 
 ---
 
-Tjänsteorienterande arkitekturer?
-Web services?
+### Vad är Big Data?
+
+- Definition av Big Data
+- Fem V – Volume, Variety, Velocity, Veracity, Value
+
+Note:
+Big Data skiljer sig från traditionell dataanalys. Skillnaderna beskrivs ofta med de fem V:na.
+
+Vanliga källor för Big Data? Sociala medier, sensorer och affärstransaktioner.
 
 ---
 
-# Kursens Mål, Schema, och Format
+### Volym
 
-- **Mål:** Förstå grundläggande om API:er, utveckla och konsumera API:er, och mer.
-- **Schema:** Åtta heldagar fyllda med teori och praktiska övningar.
-- **Format:** Interaktiv undervisning med en blandning av föreläsningar och hands-on övningar.
+Note:
+"Volym" refererar till den enorma mängd data som genereras varje sekund från olika källor som sociala medier, transaktionsregister, IoT-enheter och mer. Skalan på datamängden är så pass stor att traditionella databehandlingsverktyg ofta är otillräckliga.
 
----
-
-# Vad är API:er och Varför är de Viktiga?
-
-- Kort diskussion om API:ers roll i dagens tekniklandskap.
-- Hur API:er möjliggör kommunikation mellan olika programvarusystem.
+Facebook generear 4 petabyte data per dag.
+Instagram har 2 miljarder MAU.
 
 ---
 
-# Vad är ett API?
+### Variation
 
-- **API** står för **Application Programming Interface**.
-- En uppsättning regler och definitioner som programvaror använder för att kommunicera med varandra.
+- Datan är på olika format
 
----
+Note:
+Till skillnad från i traditionell dataanlys hanterar Big Data ofta väldigt olika format.
 
-# Olika Typer av API:er
-
-- **Offentliga API:er** – Tillgängliga för alla utvecklare.
-- **Privata API:er** – Begränsad till intern användning inom en organisation.
-- **Partner API:er** – Delas med specifika affärspartners.
+Data kan vara olika strukturerat, man pratar om strukturerat, ostrukturerat och semistrukturerat data. Strukturerat data kan vara databaser, ostrukturerade data kan vara videoklipp eller bilder, och semistrukturerade data kan inkludera e-postmeddelanden.
 
 ---
 
-# API:ers Komponenter
+### Hastighet
 
-- **Endpoints:** Specifika vägar där API:er kan nås.
-- **Requests:** Anrop som görs till ett API för att begära information eller utföra en åtgärd.
-- **Responses:** Svar från ett API som innehåller den begärda informationen eller resultatet av en åtgärd.
+- Snabbhet i dataflöde
 
----
+Note:
+När det kommer till Big Data är det vanligt att finns höga krav på att datat ska hanteras _snabbt_. Extrema exempel på börsen, där till och med ljusets hastighet spelar roll. Mäklare hyr platser intill servrarna för att kunna agera så fort som möjligt.
 
-# Användningsområden för API:er
-
-- Integrering mellan olika system och tjänster.
-- Möjliggör datautbyte och funktionalitet mellan programvaror.
-- Underlättar utveckling av nya applikationer och tjänster.
+Även inom till exempel nödrespons är det viktigt med snabba beslut.
 
 ---
 
-presqa.olofab.se
+### Verklighetsnära (Veracity)
+
+- Tillförlitlighet
+
+Note:
+"Verklighetsnära" refererar till osäkerheten i datatillförlitlighet. Big Data innebär att du samlar in _all_ data, oavsett kvaliten på källan. Dels kan sensorer ha dålig kvalitet, dels så samlar de per defintion in en massa onödigt data. Diskutera vikten av att ha god kvalitet på data och de utmaningar som kan uppstå från felaktig, missvisande eller ofullständig data.
+
+Prata om lax.
+
+---
+
+### Värde
+
+- Nyttan av data
+
+Note:
+"Värde" är det viktigaste V:et. Det handlar om att extrahera nyttig information från den stora mängden data. Förklara att trots att data kan vara rikligt, så är det bara värdefullt om det kan omvandlas till insikter som leder till förbättrade beslutsprocesser eller affärsfördelar.
+
+---
+
+### Big Data i dagens värld
+
+- Användningsområden
+- Påverkan på affärer och samhälle
+
+Note:
+Diskutera hur Big Data används i olika sektorer som hälsa, finans och handel för att driva beslutsfattande och innovation. Ge exempel på hur insikter från Big Data kan förbättra effektivitet och produktivitet.
+
+---
+
+### Big Data inom sjukvården
+
+Note:
+
+- Förbättrad patientvård och behandlingsstrategier
+- Exempel: Prediktiv analys för att förutse patientutfall
+  Diskutera hur sjukhus använder Big Data för att förbättra patientvården genom att analysera stora mängder hälsoinformation. Visa ett fall där data från patientjournaler och wearable devices används för att förutse hälsorisker eller förbättra behandlingsplaner.
+
+---
+
+### Big Data i detaljhandeln
+
+Note:
+
+- Anpassning av kundupplevelser
+- Exempel: Användning av köpdatanalys för att skräddarsy marknadsföringskampanjer
+  Illustrera hur detaljhandelsföretag använder Big Data för att anpassa kundupplevelser och öka försäljningen. Visa ett exempel på hur köpdata analyseras för att erbjuda riktade rabatter och erbjudanden baserade på kundens tidigare beteende och preferenser.
+
+---
+
+### Big Data inom finanssektorn
+
+Note:
+
+- Riskhantering och bedrägeribekämpning
+- Exempel: Algoritmer för att upptäcka ovanliga transaktionsmönster
+  Förklara hur finansinstitutioner använder Big Data för att hantera risker och förhindra bedrägerier. Visa hur algoritmer kan upptäcka ovanliga beteenden och transaktionsmönster som kan tyda på bedrägeri, vilket hjälper banker att snabbt reagera.
+
+---
+
+### Big Data inom transportindustrin
+
+Note:
+
+- Optimering av ruttplanering och trafikflöden
+- Exempel: Real-tids trafikdataanalys
+  Beskriv hur transportföretag och stadsplanerare använder Big Data för att optimera ruttplanering och minska trafikstockningar. Exemplifiera med hur realtidstrafikdata från sensorer och GPS-enheter används för att justera trafikljus och ruttplaneringar.
+
+---
+
+### Big Data och smarta städer
+
+Note:
+
+- Ökad effektivitet i stadstjänster och infrastruktur
+- Exempel: Smarta energinät och avfallshanteringssystem
+  Diskutera hur smarta städer använder Big Data för att förbättra allt från energiförbrukning till avfallshantering. Visa exempel på hur data från smarta energimätare och avfallssensorer används för att optimera resursanvändning och minska miljöpåverkan.
+
+---
+
+### Utmaningar med Big Data
+
+- Integritetsfrågor och datahantering
+- Exempel: Frågor kring användardatainsamling och GDPR
+
+Note:
+Avsluta med att diskutera de etiska och praktiska utmaningarna med Big Data, speciellt kring dataskydd och integritet. Ta upp exempel på hur företag och organisationer måste navigera komplexa regelverk som GDPR för att hantera personuppgifter på ett ansvarsfullt sätt.
+
+---
+
+### Grundläggande Python för Big Data
+
+- Python-bibliotek: Pandas och NumPy
+- Kort demo: Data import och manipulation
+
+Note:
+Gå igenom några grundläggande Python-bibliotek som används för datahantering. Visa en kort demo där du importerar data med Pandas och gör några enkla manipulationer. Förklara hur dessa färdigheter är viktiga för att hantera och förstå Big Data.

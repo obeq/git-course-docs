@@ -1,53 +1,104 @@
-# API Request och Response Modellen
+## Idag
 
-- Grundstenen i kommunikation via API:er.
-- **Request** innehåller: HTTP-metod, endpoint, headers, och ibland en body.
-- **Response** innehåller: statuskod, headers, och en body med data eller felmeddelande.
-
----
-
-# HTTP Metoder
-
-- **GET** för att hämta data.
-- **POST** för att skapa ny data.
-- **PUT** för att uppdatera befintlig data.
-- **DELETE** för att radera data.
+- Pipeline
+- Jupyter Notebook
+- Streamlit
 
 ---
 
-# Förståelse för Statuskoder
-
-- **200 OK** - Begäran lyckades.
-- **404 Not Found** - Resursen kunde inte hittas.
-- **500 Internal Server Error** - Ett fel uppstod på servern.
+![Data Pipeline](images/bigdata-workflow.png)
 
 ---
 
-# API-säkerhet
-
-- Vikten av att skydda känslig data.
-- Metoder inkluderar autentisering, auktorisering, och datakryptering.
-- Exempel på säkerhetsstandarder: OAuth, API-nycklar.
+Github: https://github.com/obeq/big-data-playground
+![Repo](images/githubrepo.png)
 
 ---
 
-# REST API Konventioner
+### 1. Data Ingestion
 
-- Använder HTTP-metoder på ett meningsfullt sätt.
-- Stateless kommunikation.
-- Resurser identifieras via URI:er.
+- Real-time ingestion
+- Batch ingestion
 
----
+Note:
 
-# Dags för Hands-On!
+- **Real-time ingestion** involves streaming data directly into the pipeline as it's generated, using tools like Apache Kafka, Amazon Kinesis, or Google Pub/Sub.
+- **Batch ingestion** involves collecting data at specific intervals and is handled by tools like Apache Sqoop or traditional ETL platforms.
 
-- Vi ska nu använda Postman för att göra enkla API-anrop.
-- Utforska ett offentligt API tillsammans.
-- Mål: Gör ett GET-anrop och analysera svaret.
+Data ingestion is the initial stage where data is collected or imported into the system from various sources. These sources can be databases, web services, IoT devices, online transactions, etc. The goal here is to gather raw data in real-time or batch mode.
 
 ---
 
-# Sammanfattning och Frågor
+### 2. Data Storage
 
-- Vi har täckt API-grunderna, HTTP-metoder, och statuskoder.
-- Några funderingar eller frågor om det vi gått igenom?
+- Data Lakes
+- Data Warehouses
+
+Note:
+Once data is ingested, it needs to be stored in a system that can handle the scale and nature of the data.
+
+- **Data Lakes**: Store raw, unstructured data in its native format. Tools like Apache Hadoop HDFS or cloud solutions like Amazon S3 are common.
+- **Data Warehouses**: Structured, filtered data is stored here for more straightforward access and analysis. Examples include Google BigQuery, Amazon Redshift, and Snowflake.
+
+---
+
+### 3. Data Processing
+
+- Batch Processing
+- Stream Processing
+
+Note:
+
+- **Batch Processing**: Processes large volumes of data all at once. Tools like Apache Hadoop MapReduce are typical.
+- **Stream Processing**: Processes data in real-time as it arrives. Apache Spark Streaming and Apache Flink are popular tools for this.
+
+---
+
+### 4. Data Enrichment
+
+Note:
+Data enrichment involves enhancing the raw or intermediate data by merging it with other data sources to add context or additional insights. This step can also include data validation to ensure accuracy and completeness.
+
+---
+
+### 5. Data Analysis
+
+- Descriptive Analytics
+- Predictive Analytics
+- Prescriptive Analytics
+
+Note:
+At this stage, the processed data is analyzed to extract actionable insights. This can involve:
+
+- **Descriptive Analytics**: Understanding what happened based on historical data.
+- **Predictive Analytics**: Using statistical models and machine learning to predict future outcomes.
+- **Prescriptive Analytics**: Suggesting actions based on the results of predictive analytics.
+
+Tools commonly used here include Python libraries like Pandas and Scikit-Learn, R, and specialized analytics platforms.
+
+---
+
+### 6. Data Visualization
+
+Note:
+The insights derived from the analysis phase are often visualized to make them easier to understand and actionable. Visualization tools like Tableau, Power BI, or even Python libraries like Matplotlib and Seaborn are used to create dashboards, reports, and real-time visual feeds.
+
+---
+
+### 7. Data Management and Monitoring
+
+- Data Governance
+- Performance Monitoring
+
+Note:
+Managing the flow of data through this pipeline and monitoring its performance is crucial to ensure efficiency and accuracy. This involves:
+
+- **Data Governance**: Ensuring that the data complies with standards and policies, especially concerning security and privacy.
+- **Performance Monitoring**: Tools like Apache Ambari, Grafana, or cloud-specific tools like AWS CloudWatch to monitor health and performance of the pipeline.
+
+---
+
+### 8. Feedback Loop
+
+Note:
+An often overlooked but critical component, the feedback loop involves using the outputs of the data analysis to refine and improve the input data collection, processing techniques, and the overall pipeline strategy.

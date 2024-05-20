@@ -1,224 +1,129 @@
-### API-sidetips
-
-- dataportal.se
-- kolada.se
+# Machine learning
 
 ---
 
-# Welcome to Python!
-
-- Popular programming language for web development and automation.
-- Why Python? Readable, versatile, and widely supported by a large community.
-
----
-
-## Python vs. C++: An Overview
-
-- **Python**: Interpreted, high-level, dynamically typed.
-- **C++**: Compiled, can be low-level, statically typed.
-
----
-
-### Example: Hello World
-
-- Python:
-
-```python
-print("Hello, World!")
-```
-
-- C++:
-
-```cpp
-#include <iostream>
-using namespace std;
-int main() {
-    cout << "Hello, World!";
-    return 0;
-}
-```
-
----
-
-### Python Syntax Basics
-
-- Simple and easy to learn syntax.
-- Focus on readability and efficiency.
-
----
-
-#### Example: For Loop
-
-- Python:
-
-```python
-for i in range(5):
-    print(i)
-    print(i)
-```
-
-- C++:
-
-```cpp
-for (int i = 0; i < 5; i++) {
-    cout << i << endl;
-}
-```
-
----
-
-https://diveintopython3.net/
-
----
-
-### Prova
-
-```bash
-python --version
-python3 --version
-```
-
-```
->>>
-```
-
----
-
-### Why Use Virtual Environments?
-
-- Isolates Python projects to avoid dependency conflicts.
-- Each project can have its own dependencies, irrespective of what dependencies every other project has.
-
-### Creating a Virtual Environment
-
-```bash
-python -m venv myprojectenv
-source myprojectenv/bin/activate  # On Windows use `myprojectenv\Scripts\activate`
-```
-
----
-
-### Introduction to Poetry for Dependency Management
-
-- Handles project dependencies and packaging in a simple and intuitive way.
-- Automatically manages a virtual environment for your projects.
-
----
-
-### Initializing a Project with Poetry
-
-```bash
-poetry init
-poetry add requests
-```
-
----
-
-### Basic Commands in Poetry
-
-- Start a new project: `poetry new myproject`
-- Install dependencies: `poetry install`
-- Add a new dependency: `poetry add packagename`
-
----
-
-```bash
-poetry new kulprojekt
-cd kulprojekt
-poetry install
-poetry add fastapi
-```
-
----
-
-### Example: Adding a Dependency
-
-```bash
-poetry add numpy
-```
-
----
-
-### Summary
-
-- Python offers a clear syntax and powerful frameworks and libraries for web development.
-- Virtual environments and tools like Poetry make dependency management simpler and more effective.
-
----
-
-# Bygga REST API:er
+## Supervised learning
 
 Note:
-In this part, we'll discuss the basics of REST, which stands for Representational State Transfer. REST is an architectural style for designing networked applications. It relies on a stateless, client-server, cacheable communications protocol -- the HTTP. RESTful applications use HTTP requests to post data (create and/or update), read data (e.g., make queries), and delete data. Thus, REST uses HTTP for all four CRUD (Create/Read/Update/Delete) operations.
+Supervised learning is a type of machine learning where the model is trained on a labeled dataset. It learns to map input data to the correct output by example. The goal is to approximate the mapping function so well that it can predict the output for new, unseen data.
 
 ---
 
-## Vad är ett REST API?
-
-- CRUD-operationer: Create, Read, Update, Delete.
-- HTTP-metoder: GET, POST, PUT, DELETE.
+### Regression
 
 Note:
-When designing APIs, it's crucial to make them intuitive and easy to use. This involves using standard HTTP methods clearly and consistently. For instance, GET requests should only fetch data and not change any state on the server. POST is used to create new resources, and PUT is for updating existing resources. DELETE, as the name suggests, is used to remove resources. Keeping to these standards makes your API predictable and easier to integrate with.
+Regression is a type of supervised learning algorithm that predicts a continuous output. It's used to estimate the relationship between dependent and independent variables. For example, predicting house prices based on features like size, location, and number of bedrooms.
 
 ---
 
-### PUT vs POST
-
-- **PUT**: Idempotent, används för att uppdatera resurser. Kan användas flera gånger utan att ändra resultatet.
-- **POST**: Non-idempotent, används för att skapa nya resurser. Kan ge olika resultat vid flera anrop.
-
----
-
-### Statuskoder i HTTP
+### Classification
 
 Note:
-HTTP status codes are critical in REST APIs as they inform the client about the result of their request. Common codes include 200 for a successful GET, POST, or PUT request, 201 for a resource successfully created using POST, 404 for resource not found, and 500 for an internal server error. These codes help the client to understand whether their request was successful, or if something went wrong, and how to proceed.
+Classification is another type of supervised learning algorithm that predicts the category of a given data point. It's used to classify data into different classes or categories. For example, determining whether an email is spam or not based on its content.
 
 ---
 
-### Börja med FastAPI
+## Unsupervised learning
 
 Note:
-Now, let's set up our environment for developing with FastAPI. We'll use Poetry to manage our dependencies. First, we install FastAPI and Uvicorn, which is an ASGI server that will serve our API. You can install these using Poetry by running `poetry add fastapi uvicorn`. This command adds FastAPI and Uvicorn to your project's dependencies and installs them.
+Unsupervised learning is a type of machine learning where the model is trained on an unlabeled dataset. The goal is to learn the underlying structure or distribution in the data. It's used to find hidden patterns or intrinsic structures in the data.
 
 ---
 
-### main.py
-
-```python
-from fastapi import FastAPI
-
-app = FastAPI()
-```
+### Clustering
 
 Note:
-Let's start by creating a basic FastAPI application. Create a new Python file, for example, `main.py`, and import FastAPI from the fastapi module. Then, create an instance of FastAPI by declaring `app = FastAPI()`. This instance is now ready to be used to define endpoints.
+Clustering is a type of unsupervised learning algorithm that groups similar data points together. It's used to discover the inherent structure in the data without any prior knowledge of the groups. For example, segmenting customers based on their purchasing behavior.
 
 ---
 
-```python
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-```
+### Dimensionality reduction
 
 Note:
-Implement your first endpoint using the GET method. Define a function that will respond to HTTP GET requests. You can do this by decorating a function with `@app.get("/")`. Inside the function, simply return a message like `{"Hello": "World"}`. This endpoint will now return a JSON response containing a greeting message whenever the root URL is accessed via a GET request.
+Dimensionality reduction is another unsupervised learning technique that reduces the number of features in the data. It's used to simplify the data while retaining its important characteristics. For example, reducing the number of variables in a dataset to visualize it in lower dimensions.
 
 ---
 
-### Lägg till POST, PUT, DELETE
+## Reinforcement learning
 
 Note:
-Next, let's add more functionality to our API by implementing endpoints for POST, PUT, and DELETE. These endpoints will allow users to create, update, and delete data respectively. Each endpoint uses a similar decorator but with different HTTP methods and potentially different paths and function parameters.
+Reinforcement learning is a type of machine learning where an agent learns to make decisions by interacting with an environment. It learns from trial and error to achieve a goal or maximize a reward. It's used in scenarios where the agent can take actions and receive feedback from the environment.
 
 ---
 
-### Parametrar
-
-- Path
-- Query
+### Exploration and exploitation
 
 Note:
-FastAPI makes it easy to work with both path parameters and query parameters. Path parameters are part of the URL path, for example in `/items/{item_id}`, where `item_id` is a variable part of the URL. Query parameters are appended at the end of the URL after a question mark, like `/items?name=widget`. Both types of parameters can be dynamically captured and used in your endpoint functions.
+Exploration and exploitation are two key concepts in reinforcement learning. Exploration involves trying out different actions to learn more about the environment, while exploitation involves choosing the best action based on current knowledge to maximize rewards. Balancing exploration and exploitation is crucial for effective learning.
+
+---
+
+### Markov decision process
+
+Note:
+A Markov decision process (MDP) is a mathematical framework used to model decision-making in reinforcement learning. It consists of states, actions, transition probabilities, and rewards. The goal is to find a policy that maximizes the expected cumulative reward over time.
+
+---
+
+## Common machine learning algorithms
+
+Note:
+There are many machine learning algorithms available, each with its strengths and weaknesses. Here are some of the most common ones:
+
+---
+
+### Linear Regression
+
+Note:
+Linear regression is a simple and widely used algorithm for predicting a continuous output based on one or more input features. It assumes a linear relationship between the input and output variables. It's commonly used for tasks like predicting house prices or stock prices.
+
+---
+
+### Logistic Regression
+
+Note:
+Despite its name, logistic regression is a classification algorithm used to predict the probability of a binary outcome. It's used when the dependent variable is categorical. For example, classifying emails as spam or not spam based on their content.
+
+---
+
+### Decision Trees
+
+Note:
+Decision trees are a popular algorithm for both classification and regression tasks. They model decisions and their possible consequences in a tree-like structure. Each internal node represents a decision based on an input feature, and each leaf node represents the outcome. They're easy to interpret and visualize.
+
+---
+
+### Random Forests
+
+Note:
+Random forests are an ensemble learning method based on decision trees. They build multiple decision trees and combine their predictions to improve accuracy and reduce overfitting. Random forests are robust and perform well on a variety of tasks, such as classification and regression.
+
+---
+
+### Support Vector Machines (SVM)
+
+Note:
+Support Vector Machines (SVM) are powerful classifiers that find the optimal hyperplane to separate data into different classes. They work well in high-dimensional spaces and are effective for both linear and nonlinear classification tasks. SVMs are commonly used in image recognition and text classification.
+
+---
+
+### K-Nearest Neighbors (KNN)
+
+Note:
+K-Nearest Neighbors (KNN) is a simple and intuitive algorithm for classification and regression tasks. It classifies data points based on the majority vote of their k nearest neighbors. KNN is non-parametric and lazy, meaning it doesn't make any assumptions about the underlying data distribution.
+
+---
+
+### K-Means Clustering
+
+Note:
+K-Means Clustering is an unsupervised learning algorithm used to group similar data points together. It partitions the data into k clusters based on their similarity. K-Means is widely used for clustering tasks like customer segmentation, anomaly detection, and image compression.
+
+---
+
+### Neural Networks
+
+Note:
+Neural networks are a class of deep learning algorithms inspired by the human brain. They consist of interconnected layers of neurons that process input data and learn complex patterns. Neural networks are used for a wide range of tasks, including image recognition, natural language processing, and speech recognition.
+
+---
