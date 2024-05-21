@@ -1,104 +1,199 @@
-## Idag
+# Premortem
 
-- Pipeline
-- Jupyter Notebook
-- Streamlit
+### Introduction to Premortems
 
----
-
-![Data Pipeline](images/bigdata-workflow.png)
-
----
-
-Github: https://github.com/obeq/big-data-playground
-![Repo](images/githubrepo.png)
-
----
-
-### 1. Data Ingestion
-
-- Real-time ingestion
-- Batch ingestion
+- Definition
+- Purpose
 
 Note:
-
-- **Real-time ingestion** involves streaming data directly into the pipeline as it's generated, using tools like Apache Kafka, Amazon Kinesis, or Google Pub/Sub.
-- **Batch ingestion** involves collecting data at specific intervals and is handled by tools like Apache Sqoop or traditional ETL platforms.
-
-Data ingestion is the initial stage where data is collected or imported into the system from various sources. These sources can be databases, web services, IoT devices, online transactions, etc. The goal here is to gather raw data in real-time or batch mode.
+A premortem is a strategic planning exercise where a team imagines a future failure and then works backward to identify potential causes. The purpose is to anticipate problems before they occur and to develop strategies to prevent them.
 
 ---
 
-### 2. Data Storage
+### Origins of the Premortem Exercise
 
-- Data Lakes
-- Data Warehouses
+- Concept by Gary Klein
+- Introduced in 2007
+- Article in Harvard Business Review
 
 Note:
-Once data is ingested, it needs to be stored in a system that can handle the scale and nature of the data.
-
-- **Data Lakes**: Store raw, unstructured data in its native format. Tools like Apache Hadoop HDFS or cloud solutions like Amazon S3 are common.
-- **Data Warehouses**: Structured, filtered data is stored here for more straightforward access and analysis. Examples include Google BigQuery, Amazon Redshift, and Snowflake.
+The concept of the premortem exercise was introduced by psychologist Gary Klein. It gained widespread recognition when he described it in a 2007 article published in the Harvard Business Review.
 
 ---
 
-### 3. Data Processing
+### Gary Klein's Background
 
-- Batch Processing
-- Stream Processing
+- Expertise in decision making
+- Research in naturalistic decision making
+- Author of several books on cognitive psychology
 
 Note:
-
-- **Batch Processing**: Processes large volumes of data all at once. Tools like Apache Hadoop MapReduce are typical.
-- **Stream Processing**: Processes data in real-time as it arrives. Apache Spark Streaming and Apache Flink are popular tools for this.
+Gary Klein is a renowned psychologist with expertise in decision making. His research in naturalistic decision making, which examines how people make decisions in real-world settings, laid the foundation for the premortem exercise. He has authored several books on cognitive psychology and decision making.
 
 ---
 
-### 4. Data Enrichment
+### The Premortem Article
+
+- Title: "Performing a Project Premortem"
+- Published: Harvard Business Review, September 2007
+- Key ideas: Anticipate project failure, identify potential causes, develop mitigation strategies
 
 Note:
-Data enrichment involves enhancing the raw or intermediate data by merging it with other data sources to add context or additional insights. This step can also include data validation to ensure accuracy and completeness.
+The article titled "Performing a Project Premortem" was published in the September 2007 issue of the Harvard Business Review. In this article, Klein outlined the key ideas of the premortem exercise: anticipate project failure, identify potential causes, and develop strategies to mitigate these risks.
 
 ---
 
-### 5. Data Analysis
+### Inspiration and Development
 
-- Descriptive Analytics
-- Predictive Analytics
-- Prescriptive Analytics
+- Inspired by postmortems
+- Shift from reactive to proactive
+- Aim: Improve project outcomes by foreseeing and addressing risks
 
 Note:
-At this stage, the processed data is analyzed to extract actionable insights. This can involve:
-
-- **Descriptive Analytics**: Understanding what happened based on historical data.
-- **Predictive Analytics**: Using statistical models and machine learning to predict future outcomes.
-- **Prescriptive Analytics**: Suggesting actions based on the results of predictive analytics.
-
-Tools commonly used here include Python libraries like Pandas and Scikit-Learn, R, and specialized analytics platforms.
+Klein's inspiration for the premortem exercise came from postmortem analyses, which are conducted after a project fails to understand what went wrong. He proposed a shift from a reactive to a proactive approach, with the aim of improving project outcomes by foreseeing and addressing risks before they occur.
 
 ---
 
-### 6. Data Visualization
+### Adoption and Impact
+
+- Widely adopted in various industries
+- Improved risk management
+- Enhanced team collaboration and decision making
 
 Note:
-The insights derived from the analysis phase are often visualized to make them easier to understand and actionable. Visualization tools like Tableau, Power BI, or even Python libraries like Matplotlib and Seaborn are used to create dashboards, reports, and real-time visual feeds.
+Since its introduction, the premortem exercise has been widely adopted across various industries. It has proven to be an effective tool for improving risk management, enhancing team collaboration, and fostering better decision making. Its proactive nature helps teams anticipate potential problems and take preventive measures.
 
 ---
 
-### 7. Data Management and Monitoring
+### Summary
 
-- Data Governance
-- Performance Monitoring
+- Developed by Gary Klein in 2007
+- Published in Harvard Business Review
+- Proactive approach to risk management
+- Widely adopted and impactful
 
 Note:
-Managing the flow of data through this pipeline and monitoring its performance is crucial to ensure efficiency and accuracy. This involves:
-
-- **Data Governance**: Ensuring that the data complies with standards and policies, especially concerning security and privacy.
-- **Performance Monitoring**: Tools like Apache Ambari, Grafana, or cloud-specific tools like AWS CloudWatch to monitor health and performance of the pipeline.
+In summary, the premortem exercise was developed by Gary Klein in 2007 and published in the Harvard Business Review. It offers a proactive approach to risk management by anticipating potential project failures and developing mitigation strategies. The exercise has been widely adopted and has made a significant impact on improving project outcomes.
 
 ---
 
-### 8. Feedback Loop
+### Benefits of Premortems
+
+- Identify potential risks early
+- Encourage proactive problem-solving
+- Improve team collaboration
 
 Note:
-An often overlooked but critical component, the feedback loop involves using the outputs of the data analysis to refine and improve the input data collection, processing techniques, and the overall pipeline strategy.
+Premortems help identify potential risks early, encourage proactive problem-solving, and improve team collaboration. By anticipating issues, teams can develop strategies to mitigate risks and enhance project success.
+
+---
+
+### Steps in Conducting a Premortem
+
+1. Assemble the team
+2. Imagine a project failure
+3. Identify reasons for failure
+4. Prioritize risks
+5. Develop mitigation strategies
+
+Note:
+Conducting a premortem involves five main steps. First, assemble the team. Next, imagine a scenario where the project has failed. Identify the reasons for this failure, prioritize the identified risks, and develop strategies to mitigate them.
+
+---
+
+### Step 1: Assemble the Team
+
+- Include diverse perspectives
+- Ensure key stakeholders are present
+
+Note:
+Assemble a team that includes members from different departments and roles to get diverse perspectives. Ensure that key stakeholders are present to provide insights and make decisions.
+
+---
+
+### Step 2: Imagine a Project Failure
+
+- Describe the failure scenario
+- Be as specific as possible
+
+Note:
+Ask the team to imagine that the project has failed. Describe the failure scenario in detail, being as specific as possible. This helps to visualize potential problems more clearly.
+
+---
+
+### Step 3: Identify Reasons for Failure
+
+- Brainstorm potential causes
+- Consider all aspects of the project
+
+Note:
+Brainstorm potential reasons for the project failure. Encourage the team to consider all aspects of the project, including technical, operational, and external factors. Document every possible cause, no matter how unlikely it may seem.
+
+---
+
+### Step 4: Prioritize Risks
+
+- Assess impact and likelihood
+- Focus on high-priority risks
+
+Note:
+Assess the impact and likelihood of each identified risk. Focus on high-priority risks that are both likely to occur and have significant impact. This helps to allocate resources effectively to the most critical areas.
+
+---
+
+### Step 5: Develop Mitigation Strategies
+
+- Create action plans for each high-priority risk
+- Assign responsibilities and deadlines
+
+Note:
+Develop mitigation strategies for each high-priority risk. Create detailed action plans, assign responsibilities to team members, and set deadlines for implementing these strategies. This ensures accountability and timely action.
+
+---
+
+### Example Premortem Scenario
+
+- Failure: IoT system crashes frequently
+- Potential causes:
+  - Software bugs
+  - Hardware incompatibility
+  - Insufficient testing
+  - Security breaches
+- Mitigation strategies:
+  - Conduct thorough testing
+  - Ensure hardware compatibility
+  - Implement robust security measures
+
+Note:
+For example, if the imagined failure is that the IoT system crashes frequently, potential causes might include software bugs, hardware incompatibility, insufficient testing, and security breaches. Mitigation strategies could involve conducting thorough testing, ensuring hardware compatibility, and implementing robust security measures.
+
+---
+
+### Group Exercise: Conduct a Premortem
+
+- Break into groups
+- Choose a project and imagine its failure
+- Identify potential causes and mitigation strategies
+- Share findings
+
+Note:
+Now, let's conduct a premortem exercise. Break into groups and choose a project. Imagine that the project has failed and identify potential causes. Develop mitigation strategies for the high-priority risks. After the exercise, we'll share our findings and discuss.
+
+---
+
+### Group Discussion: Premortem Findings
+
+- Share identified risks
+- Discuss mitigation strategies
+
+Note:
+Let's come back together and share the risks your groups identified during the premortem exercise. Discuss the mitigation strategies you developed and consider any additional insights brought up by your peers. This discussion will help reinforce your understanding of premortems and how they can be applied effectively.
+
+---
+
+### Wrap-up and Q&A
+
+- Summary of premortem process
+- Questions and answers
+
+Note:

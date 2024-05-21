@@ -1,170 +1,105 @@
-### Lagring och analys av data
+# Kill switches
 
-- Förstå tekniker för att analysera stora datamängder
+### Kill Switches in Project Management
 
-Note:  
-Introducera ämnet och förklara vikten av dataanalys i dagens datadrivna värld. Betona hur denna kunskap är kritisk för att effektivt hantera och utvinna värde från stora datamängder.
+### Definition and Purpose
 
----
-
-### Utmaningar med stora datamängder
-
-- Hantering av volym
-- Hantering av varietet
-- Hantering av hastighet
-
-Note:  
-Diskutera specifika utmaningar som kommer med varje "V" och hur dessa påverkar analysprocesserna.
-
----
-
-## Rast till 10:10
-
----
-
-### Översikt över databastekniker
-
-- SQL och NoSQL
-
-Note:  
-Ge en kort jämförelse mellan SQL och NoSQL-tekniker, och förklara hur de varierar i hantering av strukturerade och ostrukturerade data.
-
----
-
-### Vad är SQL?
-
-- **Definition av SQL:** Structured Query Language
-- **Användningsområden:** Hantering av relationella databaser
+- **Definition:** Predetermined criteria for project termination
+- **Purpose:** Prevent investment in non-viable projects, save resources
 
 Note:
-Introducera SQL som det standardiserade programmeringsspråket för att hantera och manipulera relationella databaser. Förklara att SQL låter användare skapa, läsa, uppdatera och radera data genom väldefinierade kommandon.
+Kill switches, also known as kill criteria, are predetermined conditions set during the planning phase of a project. If these conditions are met, the project is terminated. The purpose of kill switches is to prevent the continuation of projects that are no longer viable, thereby saving time, resources, and money.
 
 ---
 
-### Fördelar med SQL-databaser
+### Types of Kill Switches
 
-- **Pålitlig dataintegritet**
-- **Standardiserad språk**
-- **Komplexa frågor och transaktioner**
-- **Bra stöd**
+- **Performance-based:**
+  - Failure to meet specific performance metrics or milestones by a certain date
+- **Financial-based:**
+  - Exceeding budget limits or failure to secure necessary funding
+- **Technical-based:**
+  - Encountering insurmountable technical challenges or critical system failures
+- **Market-based:**
+  - Adverse market conditions or changes in regulatory environment
+- **Risk-based:**
+  - Realization of significant risks that jeopardize project success
 
 Note:
-Beskriv de viktigaste fördelarna med SQL-databaser, såsom deras förmåga att hantera komplexa frågor, stöd för samtidiga användare och transaktioner, samt hur de upprätthåller strikt dataintegritet och konsistens.
+Kill switches can be categorized into several types, including performance-based, financial-based, technical-based, market-based, and risk-based criteria. Each type addresses different aspects of project viability.
 
 ---
 
-### Exempel på SQL-databaser
+### Setting Kill Criteria
 
-- **Populära SQL-databassystem:**
-  - MySQL
-  - PostgreSQL
-  - Microsoft SQL Server
-  - Oracle Database
+1. **Identify key metrics:**
+   - Determine critical success factors and metrics
+2. **Establish thresholds:**
+   - Set clear, quantifiable thresholds for each metric
+3. **Monitor regularly:**
+   - Implement regular monitoring and reporting mechanisms
+4. **Define decision process:**
+   - Outline the process and responsibilities for making the kill decision
 
 Note:
-Lista några av de mest populära SQL-databassystemen och ge en kort beskrivning av varje, inklusive dess styrkor och vanliga användningsområden inom industrin.
+Setting kill criteria involves identifying key metrics that are critical to project success, establishing clear and quantifiable thresholds for these metrics, implementing regular monitoring mechanisms, and defining the decision-making process for terminating the project if criteria are met.
 
 ---
 
-### Grundläggande SQL-kommandon
+### Examples of Kill Criteria
 
-- **Skapa tabeller:** `CREATE TABLE`
-- **Infoga data:** `INSERT INTO`
-- **Uppdatera data:** `UPDATE`
-- **Ta bort data:** `DELETE`
-- **Fråga data:** `SELECT`
+- **Performance-based:**
+  - "If we do not achieve 50% market penetration within the first six months, we will terminate the project."
+- **Financial-based:**
+  - "If project costs exceed the budget by more than 20%, we will terminate the project."
+- **Technical-based:**
+  - "If we encounter a technical issue that cannot be resolved within three months, we will terminate the project."
 
 Note:
-Förklara och visa exempel på grundläggande SQL-kommandon. Varje kommando kan demonstreras med en enkel SQL-fråga, exempelvis hur man skapar en tabell, hur man infogar data, och hur man hämtar data från en databas. Detta ger eleverna praktiska exempel på hur SQL används för att interagera med databaser.
+Examples of kill criteria include performance-based criteria such as not achieving a certain market penetration within a specified timeframe, financial-based criteria such as exceeding the budget by a certain percentage, and technical-based criteria such as encountering an insurmountable technical issue.
 
 ---
 
-# Rast till 11:05
+### Benefits of Kill Switches
 
----
-
-### Vad är NoSQL?
-
-- **Definition av NoSQL:** Not Only SQL
-- **Syfte:** Hantera ostrukturerade och semistrukturerade data
-- **Egenskaper:** Skalbarhet, flexibilitet, enklare modellering
+- **Resource optimization:**
+  - Prevents waste of time and resources on non-viable projects
+- **Risk management:**
+  - Reduces exposure to financial and operational risks
+- **Focus on high-value projects:**
+  - Allows reallocation of resources to more promising initiatives
+- **Objective decision-making:**
+  - Provides a clear, objective basis for project termination decisions
 
 Note:
-Introducera NoSQL som en kategori av databassystem designade för att hantera stora mängder data som ofta är ostrukturerade. Förklara att NoSQL är ett svar på de begränsningar och utmaningar som finns i traditionella relationella databaser, särskilt när det gäller skalbarhet och hantering av varierande datatyper.
+Kill switches offer several benefits, including optimizing resource utilization, reducing exposure to risks, allowing focus on higher-value projects, and providing an objective basis for making project termination decisions.
 
 ---
 
-### Typer av NoSQL-databaser
+### Implementing Kill Switches
 
-- **Dokumentdatabaser:** MongoDB, CouchDB
-- **Nyckel-värde-databaser:** Redis, DynamoDB
-- **Kolumnfamiljedatabaser:** Cassandra, HBase
-- **Graf-databaser:** Neo4j, ArangoDB
+1. **Incorporate in project plan:**
+   - Include kill criteria in the initial project planning documents
+2. **Communicate to stakeholders:**
+   - Ensure all stakeholders are aware of the criteria and understand their importance
+3. **Regular reviews:**
+   - Conduct regular project reviews to assess progress against kill criteria
+4. **Be prepared to act:**
+   - Be ready to make the tough decision to terminate the project if criteria are met
 
 Note:
-Förklara de fyra huvudtyperna av NoSQL-databaser och ge exempel på varje. Beskriv hur varje typ lagrar data och de typiska användningsområdena, vilket hjälper eleverna att förstå när och varför en specifik NoSQL-databas kan vara det bästa valet.
+To effectively implement kill switches, incorporate the criteria in the initial project planning documents, communicate them to all stakeholders, conduct regular reviews to assess progress, and be prepared to act if the criteria are met.
 
 ---
 
-### Fördelar med NoSQL i hantering av Big Data
+### Conclusion
 
-- **Flexibilitet:** Schema-lös design tillåter dynamiska data
-- **Skalbarhet:** Horisontell skalbarhet, idealisk för molnet
-- **Snabbhet:** Optimerad för snabba läsningar och skrivningar
+- **Proactive measure:**
+  - Kill switches are a proactive measure to ensure project viability
+- **Enhance decision-making:**
+  - They enhance objective decision-making and resource allocation
+- **Part of strategic planning:**
+  - Integral to strategic project planning and risk management
 
 Note:
-Betonar fördelarna med NoSQL när det gäller att hantera Big Data. Diskutera specifikt hur dess flexibilitet i datamodellering och lagring gör det möjligt att enkelt och effektivt skala ut applikationer och hantera stora datamängder.
-
----
-
-### Exempel på NoSQL-databaser
-
-- **MongoDB:** Dokumentorienterad databas
-- **Cassandra:** Kolumnfamiljeorienterad databas
-- **Neo4j:** Graf-databas
-
-Note:
-Ge en djupare titt på några specifika exempel på NoSQL-databaser. För varje exempel, beskriv hur de fungerar, typiska användningsfall och varför de skulle väljas över andra databastyper eller över varandra beroende på projektkrav.
-
----
-
-## Rast till 15:02
-
----
-
-### Slide 13-17: Tekniker för dataanalys
-
-- Slide 13: Data Mining
-- Slide 14: Maskininlärning
-- Slide 15: Textanalys
-- Slide 16: Datavisualisering
-- Slide 17: Realtidsanalys
-
-Note:  
-Varje slide fokuserar på en specifik teknik för dataanalys, dess verktyg, och hur de tillämpas på stora datamängder för att driva insikter.
-
-### Slide 18: Verktyg och plattformar för Big Data-analys
-
-- Hadoop
-- Spark
-- Flink
-
-Note:  
-Beskriv några av de mest använda verktygen och plattformarna som hanterar analys av stora datamängder, och förklara kort deras funktioner och fördelar.
-
-### Slide 19: Framtidstrender inom dataanalys
-
-- AI och automatisering
-- Förbättrad datavisualisering
-- Dataprivatighet och säkerhet
-
-Note:  
-Diskutera framtida trender och innovationer inom fältet som kan påverka hur vi hanterar och analyserar Big Data.
-
-### Slide 20: Sammanfattning och slutsatser
-
-- Viktigaste punkterna från presentationen
-- Uppmaning till vidare lärande och utforskning
-
-Note:  
-Summera de viktigaste lärdomarna från presentationen och uppmuntra åhörarna att fortsätta utforska och lära sig om Big Data-analys.
+In conclusion, kill switches are a proactive measure to ensure project viability, enhance objective decision-making, and are an integral part of strategic project planning and risk management. Implementing kill criteria helps organizations avoid sunk costs and focus on more promising opportunities.
